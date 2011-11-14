@@ -5,10 +5,11 @@ public class StringsWork {
 
     public static void main(String ... av) throws IOException {
 
-        int countOfLines = 0, intValue;
+        int i;
         FileReader reader = new FileReader("d:/Git_repository/automated-qa/tzemlyankin/hometasks/hometask2_strings_repetition_removal/Strings_source.txt");
-        String stringDoubleLetters, stringWithSpaces, stringDoubleLettersResult = "stub", stringWithSpacesResult;
-        BufferedReader scnr = new BufferedReader(reader);        
+        String stringDoubleLetters, stringWithSpaces, stringDoubleLettersResult = "", stringWithSpacesResult;
+        BufferedReader scnr = new BufferedReader(reader);                      
+        char oneChar;
 
         stringDoubleLetters = scnr.readLine();
         stringWithSpaces = scnr.readLine();
@@ -17,7 +18,13 @@ public class StringsWork {
         reader.close();
 
         // Operations
+        for (i=0; i<stringDoubleLetters.length(); i++){
+            oneChar = stringDoubleLetters.charAt(i);
+            if (!stringDoubleLettersResult.contains(Character.toString(oneChar)))
+            stringDoubleLettersResult = stringDoubleLettersResult + oneChar;
+        }
         //stringDoubleLettersResult = stringDoubleLetters.replaceAll(regex, "");
+        
         stringWithSpacesResult = stringWithSpaces.replaceAll("[\\s]+", " ");
 
 
