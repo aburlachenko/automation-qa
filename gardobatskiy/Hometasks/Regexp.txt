@@ -1,0 +1,1 @@
+cat 2pars.txt |  perl -p -e 's/(\w)(?=.*?\1)//g;s/(\s)\1+/$1/g;s/\n//g' > parsed.txt
