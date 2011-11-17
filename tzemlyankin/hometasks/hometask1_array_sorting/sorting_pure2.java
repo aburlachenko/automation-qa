@@ -124,17 +124,27 @@ public class sorting_pure2 {
  
     private static int writeBytes(byte[] bb, int p) {
         int position = 0;
-        if(p<0){
-            bb[position++] = (byte)0x2D;   
-        }
+        bb[position++] = (byte)0x0A;
         int digit = Math.abs(p) % 10;
         int number = Math.abs(p) / 10;
         while((number > 0) || (digit > 0)){
             bb[position++] = (byte)(digit + 0x30);
             digit = number % 10;
             number /= 10;
+        }  
+        if(p<0){
+            bb[position++] = (byte)0x2D;   
         }
-        bb[position++] = (byte)0x0A;
+        int i = 0;
+        int j = position - 1;
+        byte tmp;
+        while (j > i) {
+            tmp = bb[j];
+            bb[j] = bb[i];
+            bb[i] = tmp;
+            j--;
+            i++;
+        }
         return position;
     }
 
