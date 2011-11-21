@@ -19,7 +19,7 @@ public class Ant {
 			field.invertCell(position);
 			position.setX(position.getX()+direction.getCurrentDirection().getX());
 			position.setY(position.getY()+direction.getCurrentDirection().getY());
-			System.out.println(i);
+			//System.out.println(i);
 		}
 	}
 		
@@ -27,7 +27,12 @@ public class Ant {
 		Field field = new Field();
 		Ant ant = new Ant();
 		//ant.run(field, new BigDecimal(BigInteger.ONE, -18).longValueExact());
-		ant.run(field, 12208);
+//		for (int i=12000;i<=13000;i++) {
+//			field.clear();
+//			ant.run(field,i);
+//			System.out.println(i+","+field.countBlackCells());
+//		}
+		ant.run(field, 100000);
 		System.out.println(field.countBlackCells());
 	}
 

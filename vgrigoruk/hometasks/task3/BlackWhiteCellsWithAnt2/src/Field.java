@@ -19,4 +19,8 @@ public class Field {
 	public int countBlackCells() {
 		return blackCells.size();	
 	}
+	
+	public void clear() {
+		blackCells.clear();
+	}
 }
