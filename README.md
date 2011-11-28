@@ -1,7 +1,7 @@
 COGNIANCE AUTOMATION TESTING COMMUNITY
 ====================
 This repository contains files & information about Cogniance Inc. Automation Testing Community.
-All questions and propositions you can send to [mautomation-qa email list][mail]
+All questions and propositions you can send to [automation-qa email list][mail]
 or discuss on weekly meetings which happening every Monday 19-00 (Kiev time)
 
 [mail]:mailto:automation-qa@cogniance.com
