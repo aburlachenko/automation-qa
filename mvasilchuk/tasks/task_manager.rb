@@ -18,7 +18,8 @@ choice = gets().chomp()
       task1.menu
     when "5"
       task5=Task5.new
-      task5.factorial(10)
+    #  puts task5.factorial(10)
+       task5.mult_digits(123459)
     else
       return 1
   end

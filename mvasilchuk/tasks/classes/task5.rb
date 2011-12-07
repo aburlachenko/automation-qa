@@ -3,26 +3,18 @@ class Task5
 
 
 
-  def factorial(a)
-    puts a
-
-       if a==0
-         return 0
-         puts "asdf"
-       end
-
-      if (a>0)
-          fac=a*factorial(a-1)
 
 
-      end
+def factorial n
+  n > 1 ? n * factorial(n - 1) : 1
 
-        puts fac
+end
 
+def mult_digits(number)
 
+ puts  number.size
 
-  end
-
+end
 
 
 
