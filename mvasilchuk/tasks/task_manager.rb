@@ -19,7 +19,8 @@ choice = gets().chomp()
     when "5"
       task5=Task5.new
     #  puts task5.factorial(10)
-       task5.mult_digits(123459)
+    #   task5.mult_digits(1234594)
+    task5.mult_digits(234)
     else
       return 1
   end
