@@ -1,0 +1,8 @@
+ <target name="run-suite" depends="compile" description="Run Selenium tests">
+     <echo>Running Suite from file: ${suite}</echo>
+
+      <testng classpathref="runtime.classpath"
+              outputDir="${basedir}/target/reports">
+              <xmlfileset file="${suite}"/>
+     </testng>
+   </target>

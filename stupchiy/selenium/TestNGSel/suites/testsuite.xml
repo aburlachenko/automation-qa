@@ -1,0 +1,13 @@
+<suite name="Cogniance Automators" verbose="10">
+  <parameter name="host" value="localhost" />
+  <parameter name="port" value="4444" />
+  <parameter name="browser" value="*firefox" />
+  <parameter name="website" value="http://www.cogniance.com" />
+ 
+  <test name="Test Home Page" preserve-order="true">
+    <classes>
+      <class name="com.cogniance.TestHomePage">
+      </class>
+    </classes>
+  </test>
+</suite>
