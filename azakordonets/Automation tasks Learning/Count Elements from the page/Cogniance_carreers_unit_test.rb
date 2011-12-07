@@ -5,7 +5,7 @@ require "test/unit"
 class CarrersTestUnit < Test::Unit::TestCase
 
   def setup
-    @driver = Selenium::WebDriver.for:firefox
+    @driver = Selenium::WebDriver.for :firefox
     @driver.manage.timeouts.implicit_wait = 30
     @verification_errors = []
   end
@@ -19,15 +19,14 @@ class CarrersTestUnit < Test::Unit::TestCase
     @driver.get "http://cogniance.com"
     @driver.find_element(:css, "li.careers > a > span").click
     @driver.find_element(:xpath, "//div[2]/div/div/ul/li[2]/a/span").click
-    number_of_positions = @driver.find_elements(:css, ".one_career h3").length
+    puts number_of_positions = @driver.find_elements(:css, ".one_career h3")[0].text
     puts "Number of elements on the page is #{number_of_positions.to_s}."
     count = 1
     while count<=number_of_positions
       puts  name = 'Name of the position is ' + @driver.find_element(:xpath, "//div[2]/div/div[2]/div/div[2]/div[#{count.to_s}]/h3").text.to_s+'.'
       count +=1
     end
-    puts "hello"
-    #sleep 10
+
   end
 
   def element_present?(how, what)
