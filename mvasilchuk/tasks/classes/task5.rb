@@ -41,15 +41,15 @@ def get_digits(number)
 end
 
 
-  def mult_digits(number)
+  def sum_digits(number)
 
     a=get_digits(number)
-    mult=1
+    sum=0
     a.each do |i|
-    mult = mult*i
+    sum +=i
 
     end
-    puts mult
+    puts sum
 
 
   end
