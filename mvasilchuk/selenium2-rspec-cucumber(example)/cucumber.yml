@@ -1,0 +1,1 @@
+html: -color -f pretty --format html --out=features/test_results/test_report.html
