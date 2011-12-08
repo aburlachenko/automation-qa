@@ -1,9 +1,0 @@
-config1:
-  browser: firefox
-  close: false
-  wait: 5
-config2:
-  browser: chrome
-  close: false
-  wait: 10
-
