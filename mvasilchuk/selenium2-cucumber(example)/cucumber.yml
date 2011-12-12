@@ -1,0 +1,2 @@
+html: -color -f pretty --format html --out=features/test_results/test_report.html
+#--format progress --format html --out=/home/max/Backend-testing2/features/test_results/test_report.html
