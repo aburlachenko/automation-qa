@@ -3,45 +3,7 @@ Feature: Searching
   I wanna search some information and check result
 
   Scenario: search[90m                                # /home/max/automation-qa/mvasilchuk/selenium2-cucumber(example)/features/searching.feature:6[0m
-    [31mGiven I [31m[1mam[0m[0m[31m on "[31m[1mgoogle.com.ua[0m[0m[31m" page[90m            # features/step_definitions/steps.rb:38[0m[0m
-[31m      end of file reached (EOFError)[0m
-[31m      /usr/lib/ruby/1.8/net/protocol.rb:135:in `sysread'[0m
-[31m      /usr/lib/ruby/1.8/net/protocol.rb:135:in `rbuf_fill'[0m
-[31m      /usr/lib/ruby/1.8/timeout.rb:67:in `timeout'[0m
-[31m      /usr/lib/ruby/1.8/timeout.rb:101:in `timeout'[0m
-[31m      /usr/lib/ruby/1.8/net/protocol.rb:134:in `rbuf_fill'[0m
-[31m      /usr/lib/ruby/1.8/net/protocol.rb:116:in `readuntil'[0m
-[31m      /usr/lib/ruby/1.8/net/protocol.rb:126:in `readline'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:2028:in `read_status_line'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:2017:in `read_new'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:1051:in `request'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:1037:in `request'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:543:in `start'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:1035:in `request'[0m
-[31m      ./features/step_definitions/../classes/page.rb:18:in `open'[0m
-[31m      ./features/step_definitions/steps.rb:40:in `/^I (am|am not) on "([^\"]*)*" page$/'[0m
-[31m      ./features/searching.feature:8:in `Given I am on "google.com.ua" page'[0m
-    [36mWhen I enter "[36m[1mcucumber[0m[0m[36m" text in the "[36m[1mq[0m[0m[36m" field[90m # features/step_definitions/steps.rb:16[0m[0m
-    [36mThen I should see "[36m[1mcukes.info/[0m[0m[36m" cite[90m          # features/step_definitions/steps.rb:34[0m[0m
-[31m      Connection refused - connect(2) (Errno::ECONNREFUSED)[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `initialize'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `open'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `connect'[0m
-[31m      /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'[0m
-[31m      /usr/lib/ruby/1.8/timeout.rb:101:in `timeout'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `connect'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:542:in `start'[0m
-[31m      /usr/lib/ruby/1.8/net/http.rb:1035:in `request'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/http/default.rb:81:in `response_for'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/http/default.rb:43:in `request'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/http/common.rb:35:in `call'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/bridge.rb:426:in `raw_execute'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/bridge.rb:404:in `execute'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/bridge.rb:206:in `getScreenshot'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:34:in `screenshot_as'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:18:in `save_screenshot'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:18:in `open'[0m
-[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:18:in `save_screenshot'[0m
-[31m      /home/max/automation-qa/mvasilchuk/selenium2-cucumber(example)/features/support/env.rb:62:in `After'[0m
+    [32mGiven I [32m[1mam[0m[0m[32m on "[32m[1mgoogle.com.ua[0m[0m[32m" page[90m            # features/step_definitions/steps.rb:38[0m[0m
+    [32mWhen I enter "[32m[1mcucumber[0m[0m[32m" text in the "[32m[1mq[0m[0m[32m" field[90m # features/step_definitions/steps.rb:16[0m[0m
+    [32mThen I should see "[32m[1mcukes.info/[0m[0m[32m" cite[90m          # features/step_definitions/steps.rb:34[0m[0m
 
