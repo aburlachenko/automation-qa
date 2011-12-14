@@ -1,0 +1,9 @@
+Feature: Searching
+  
+  I wanna search some information and check result
+
+  Scenario: search[90m                                # /home/max/automation-qa/mvasilchuk/selenium2-cucumber(example)/features/searching.feature:6[0m
+    [32mGiven I [32m[1mam[0m[0m[32m on "[32m[1mgoogle.com.ua[0m[0m[32m" page[90m            # features/step_definitions/steps.rb:38[0m[0m
+    [32mWhen I enter "[32m[1mcucumber[0m[0m[32m" text in the "[32m[1mq[0m[0m[32m" field[90m # features/step_definitions/steps.rb:16[0m[0m
+    [32mThen I should see "[32m[1mcukes.info/[0m[0m[32m" cite[90m          # features/step_definitions/steps.rb:34[0m[0m
+

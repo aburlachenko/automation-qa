@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Filename: build.xml
+  Note: You have to change the followings according to your environment:
+          -<pathelement location="lib/testng/testng-5.14.7.jar"/>
+          -<pathelement location="bin"/>
+-->
+<project basedir="." default="runTestNG" name="Sample of Ant file for TestNG">
+ 
+  <!-- Define <testng> task -->
+  <taskdef name="testng" classname="org.testng.TestNGAntTask">
+    <classpath>
+      <!--<pathelement location="lib/testng-6.3.1.jar"/>-->
+	  	<pathelement location="lib/">
+		</pathelement>
+		<fileset dir="lib/">
+			<include name="**/*.jar" />
+		</fileset>
+    </classpath>
+  </taskdef>
+ 
+  <!-- Directory name where the TestNG report will be saved. -->
+  <property name="testng.output.dir" value="testng_output"/>
+ 
+  <!-- Directory path of compiled classes(i.e *.class) -->
+  <path id="classes">
+     <pathelement location="bin"/>
+  </path>
+ 
+  <!--
+  Target to run TestNG. It will run according to what are defined in testng.xml.
+  The report will be saved at .../testng_output/index.html.
+  -->
+  <target name="runTestNG">
+ 
+    <mkdir dir="${testng.output.dir}"/><!-- Create the output directory. -->
+ 
+    <testng outputdir="${testng.output.dir}" classpathref="classes"> 
+      <xmlfileset dir="." includes="testng.xml"/> 
+    </testng>
+ 
+  </target>
+ 
+</project>

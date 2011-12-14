@@ -1,0 +1,2 @@
+number_of_bottles = 15
+puts number_of_bottles.to_s[-1].chr
