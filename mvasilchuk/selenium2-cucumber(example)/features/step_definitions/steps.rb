@@ -39,12 +39,12 @@ Given /^I (am|am not) on "([^\"]*)*" page$/ do |action,page|
 
 Page.new(@browser).open(page)
 
-page = "http://www.#{page}/"
+page_url = "http://www.#{page}/"
   case action
      when "am"
-       @browser.current_url.should == "#{page}"
+       @browser.current_url.should == "#{page_url}"
      when "am not"
-       @browser.current_url.should != "#{page}"
+       @browser.current_url.should != "#{page_url}"
   end
 
 end

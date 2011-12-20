@@ -7,3 +7,44 @@ Feature: Searching
     [32mWhen I enter "[32m[1mcucumber[0m[0m[32m" text in the "[32m[1mq[0m[0m[32m" field[90m # features/step_definitions/steps.rb:16[0m[0m
     [32mThen I should see "[32m[1mcukes.info/[0m[0m[32m" cite[90m          # features/step_definitions/steps.rb:34[0m[0m
 
+  Scenario: scenario should fail[90m                  # /home/max/automation-qa/mvasilchuk/selenium2-cucumber(example)/features/searching.feature:14[0m
+    [31mGiven I [31m[1mam[0m[0m[31m on "[31m[1mgoogle.com.ua[0m[0m[31m" page[90m            # features/step_definitions/steps.rb:38[0m[0m
+[31m      Session has no driver: 4261f514-3ccf-42cc-a9d3-2b3707df6799 (Selenium::WebDriver::Error::UnhandledError)[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/nsCommandProcessor.js:442:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/driver-component.js -> file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/dispatcher.js:85:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/driver-component.js -> file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/dispatcher.js:511:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/driver-component.js -> file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/dispatcher.js:346:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/driver-component.js -> file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/webdriverserver.js:47:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/httpd.js:1935:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/httpd.js:2261:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/httpd.js:1168:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/httpd.js:1616:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/httpd.js:1464:in `unknown'[0m
+[31m      [remote server] file:///tmp/webdriver-profile20111219-28520-zocgxc/extensions/fxdriver@googlecode.com/components/httpd.js:1333:in `unknown'[0m
+[31m      ./features/step_definitions/../classes/page.rb:18:in `open'[0m
+[31m      ./features/step_definitions/steps.rb:40:in `/^I (am|am not) on "([^\"]*)*" page$/'[0m
+[31m      ./features/searching.feature:16:in `Given I am on "google.com.ua" page'[0m
+    [36mWhen I enter "[36m[1mcucumber[0m[0m[36m" text in the "[36m[1mq[0m[0m[36m" field[90m # features/step_definitions/steps.rb:16[0m[0m
+    [36mThen I should see "[36m[1mkukurukuk[0m[0m[36m" cite[90m            # features/step_definitions/steps.rb:34[0m[0m
+[31m      Connection refused - connect(2) (Errno::ECONNREFUSED)[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `initialize'[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `open'[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `connect'[0m
+[31m      /usr/lib/ruby/1.8/timeout.rb:53:in `timeout'[0m
+[31m      /usr/lib/ruby/1.8/timeout.rb:101:in `timeout'[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:560:in `connect'[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:553:in `do_start'[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:542:in `start'[0m
+[31m      /usr/lib/ruby/1.8/net/http.rb:1035:in `request'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/http/default.rb:81:in `response_for'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/http/default.rb:43:in `request'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/http/common.rb:35:in `call'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/bridge.rb:426:in `raw_execute'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/bridge.rb:404:in `execute'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/remote/bridge.rb:206:in `getScreenshot'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:34:in `screenshot_as'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:18:in `save_screenshot'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:18:in `open'[0m
+[31m      /var/lib/gems/1.8/gems/selenium-webdriver-2.10.0/lib/selenium/webdriver/common/driver_extensions/takes_screenshot.rb:18:in `save_screenshot'[0m
+[31m      /home/max/automation-qa/mvasilchuk/selenium2-cucumber(example)/features/support/env.rb:62:in `After'[0m
+

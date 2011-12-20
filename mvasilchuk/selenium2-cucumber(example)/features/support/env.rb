@@ -1,4 +1,4 @@
-require "rubygems"
+
 require "selenium-webdriver"
 require "rspec-expectations"
 require 'yaml'
@@ -28,10 +28,10 @@ case BROWSER
   when :firefox
      browser = Selenium::WebDriver.for BROWSER
      # configuring firefox profile
-profile = Selenium::WebDriver::Firefox::Profile.new
-profile['browser.download.dir'] = "#{File.dirname(__FILE__)}/../../downloads/"
-profile['browser.download.folderList'] = 2
-profile['browser.helperApps.neverAsk.saveToDisk'] = "application/zip"
+#profile = Selenium::WebDriver::Firefox::Profile.new
+#profile['browser.download.dir'] = "#{File.dirname(__FILE__)}/../../downloads/"
+#profile['browser.download.folderList'] = 2
+#profile['browser.helperApps.neverAsk.saveToDisk'] = "application/zip"
 
   when :chrome
      browser = Selenium::WebDriver.for BROWSER
@@ -51,7 +51,7 @@ Before do
 
   @browser=browser
     sleep 1
-  scenario_number+=1
+ scenario_number+=1
 
 end
 #
