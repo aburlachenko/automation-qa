@@ -1,3 +1,4 @@
+# this program defines whether entered number is Armstrong number or not.
   puts 'Enter your number. It should be 3 digits'
   number = gets.chomp
   while number.size !=3 do

@@ -1,3 +1,4 @@
+# progream that defines whether entered number is lucky or not
 puts "Enter 6 digits number"
 number = 0
 while number.size != 6 do

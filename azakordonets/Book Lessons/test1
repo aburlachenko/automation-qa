@@ -1,9 +1,0 @@
-def random_select(array, n, new_array)
-  array.select{|n| rand(n)}.each do |n|
-  new_array.push(n)
-  end
-  array = puts.chomp
-  n= puts.chomp
-  random_select(array,n, new_array)
-  puts new_array
-end
