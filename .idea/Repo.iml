@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] fastercsv (v1.5.4, /Library/Ruby/Gems/1.8/gems/fastercsv-1.5.4)" level="application" />
   </component>
 </module>
 
