@@ -1,0 +1,8 @@
+TASK 8
+====================
+Given a string s, return a string where all occurences of its first char have been changed to '*', 
+except do not change the first char itself.
+
+e.g. 'babble' yields 'ba**le'
+
+----------------------------------------------------------------------------------------------------
