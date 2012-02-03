@@ -1,0 +1,18 @@
+TASK 8
+====================
+Implement the UNIX ls -l command
+
+Output of programm should be(e.g. our _tasks folder):
+~/workspace/automation-qa/_tasks$ ls -l
+total 36
+-rw-r--r-- 1 chuck chuck 355 2012-02-03 10:37 task1.txt
+-rw-r--r-- 1 chuck chuck 337 2012-02-03 10:37 task2.txt
+-rw-r--r-- 1 chuck chuck 663 2012-02-03 10:37 task3.txt
+-rw-r--r-- 1 chuck chuck 888 2012-02-03 10:37 task4.txt
+-rw-r--r-- 1 chuck chuck 265 2012-02-03 10:37 task5.txt
+-rw-r--r-- 1 chuck chuck 542 2012-02-03 10:37 task6.txt
+-rw-r--r-- 1 chuck chuck 409 2012-02-03 10:37 task7.txt
+-rw-r--r-- 1 chuck chuck 305 2012-02-03 10:40 task8.txt
+-rw-r--r-- 1 chuck chuck 305 2012-02-03 11:59 task9.txt
+
+----------------------------------------------------------------------------------------------------
